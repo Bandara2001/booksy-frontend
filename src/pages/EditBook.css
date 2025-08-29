@@ -1,0 +1,85 @@
+/* Background only for EditBook page */
+.edit-book-page {
+  min-height: 100vh;
+  background-image: url("https://miro.medium.com/v2/resize:fit:1100/format:webp/1*j3Pdbj7Q0Ceifj6nb1ZHLg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Container styling */
+.edit-book-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* Heading */
+.edit-book-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 900;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Form styling */
+.edit-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.edit-book-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.edit-book-form input,
+.edit-book-form textarea {
+  padding: 12px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.edit-book-form input:focus,
+.edit-book-form textarea:focus {
+  border-color: #d6897f;
+  box-shadow: 0 0 8px #f7865955;
+}
+
+/* Button */
+.edit-book-form button {
+  padding: 14px;
+  background-color: #872f14;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.7px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-book-form button:hover {
+  background-color: #e4a091;
+}

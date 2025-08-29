@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-top: 12px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }

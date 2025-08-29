@@ -1,0 +1,88 @@
+.library-page {
+  padding: 20px;
+
+  /* Background image */
+  background-image: url('https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+/* Optional: translucent white overlay for better text readability */
+.library-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.genre-section {
+  margin-bottom: 40px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 180px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.book-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #e74c3c; /* red */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b; 
+}
+
+/* Edit Button */
+.edit-button {
+  background-color: #27ae60; 
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #1e8449; 
+}
+
+.library-page h1 {
+  text-align: center;
+  margin-top: 40px;  
+  margin-bottom: 30px; 
+  font-size: 2.5rem;  
+  font-weight: bold;
+  color: #333; 
+}

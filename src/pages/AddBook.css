@@ -1,0 +1,85 @@
+/* Background only for AddBook page */
+.add-book-page {
+  min-height: 100vh;
+  background-image: url("https://www.wallpapergap.com/cdn/24/176/aesthetic-book-wallpaper-1920x1200.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Updated container */
+.add-book-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* Heading */
+.add-book-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 900;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Form styling */
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.add-book-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.add-book-form input,
+.add-book-form textarea {
+  padding: 12px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.add-book-form input:focus,
+.add-book-form textarea:focus {
+  border-color: #d6897f;
+  box-shadow: 0 0 8px #f7865955;
+}
+
+/* Button */
+.add-book-form button {
+  padding: 14px;
+  background-color: #872f14;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.7px;
+  transition: background-color 0.3s ease;
+}
+
+.add-book-form button:hover {
+  background-color: #e4a091;
+}
