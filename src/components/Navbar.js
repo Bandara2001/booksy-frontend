@@ -7,24 +7,24 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
   const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
 
-  //show or hide a navbar based on the scroll direction.
-  const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) {
-      setShowNavbar(false); // if scroll down hide the navbar
-    } else {
-      setShowNavbar(true);
-    }
-    setLastScrollY(window.scrollY);
-  };
-
+  // Control navbar visibility on scroll
   useEffect(() => {
+    const controlNavbar = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowNavbar(false); // hide on scroll down
+      } else {
+        setShowNavbar(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
     window.addEventListener("scroll", controlNavbar);
-    return () => window.removeEventListener("scroll", controlNavbar); //On scroll, controlNavbar is called to hide/show the navbar.
-  }, [lastScrollY]); 
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, [lastScrollY]);
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-    navigate("/"); // Redirect to home after logout
+    navigate("/"); // redirect home after logout
   };
 
   return (

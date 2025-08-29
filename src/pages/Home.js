@@ -68,7 +68,7 @@ function Home() {
         {/* Welcome Message */}
         <div className="welcome-section">
           <h1>Welcome to Booksy Admin Panel</h1>
-          <p1>Hi Admin!</p1>
+          <p>Hi Admin!</p>
           <p>
             Booksy is your all-in-one digital book management system. Easily
             add, edit, delete, or search through books, all from a clean and
